@@ -35,6 +35,7 @@
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpNguyênLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lsvBill = new System.Windows.Forms.ListView();
@@ -49,6 +50,7 @@
             this.textboxtongtien = new System.Windows.Forms.Label();
             this.ptnCheckOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnOpenChat = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
@@ -84,7 +86,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.thôngTinTàiKhoảnToolStripMenuItem,
-            this.nhậpNguyênLiệuToolStripMenuItem});
+            this.nhậpNguyênLiệuToolStripMenuItem,
+            this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
@@ -136,9 +139,17 @@
             // 
             this.nhậpNguyênLiệuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhậpNguyênLiệuToolStripMenuItem.Name = "nhậpNguyênLiệuToolStripMenuItem";
-            this.nhậpNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(172, 27);
-            this.nhậpNguyênLiệuToolStripMenuItem.Text = "Nhập Nguyên Liệu";
+            this.nhậpNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(165, 27);
+            this.nhậpNguyênLiệuToolStripMenuItem.Text = "Nhập nguyên liệu";
             this.nhậpNguyênLiệuToolStripMenuItem.Click += new System.EventHandler(this.nhậpNguyênLiệuToolStripMenuItem_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(100, 27);
+            this.menuToolStripMenuItem.Text = "Thực đơn";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -283,6 +294,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnOpenChat);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel6);
@@ -292,6 +304,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(696, 160);
             this.panel4.TabIndex = 4;
+            // 
+            // btnOpenChat
+            // 
+            this.btnOpenChat.BackColor = System.Drawing.Color.SeaShell;
+            this.btnOpenChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenChat.Location = new System.Drawing.Point(522, 83);
+            this.btnOpenChat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpenChat.Name = "btnOpenChat";
+            this.btnOpenChat.Size = new System.Drawing.Size(150, 71);
+            this.btnOpenChat.TabIndex = 11;
+            this.btnOpenChat.Text = "💬Chat/Voice";
+            this.btnOpenChat.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -410,10 +434,10 @@
             // 
             this.bnAddFood.BackColor = System.Drawing.Color.NavajoWhite;
             this.bnAddFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnAddFood.Location = new System.Drawing.Point(522, 34);
+            this.bnAddFood.Location = new System.Drawing.Point(522, -1);
             this.bnAddFood.Margin = new System.Windows.Forms.Padding(4);
             this.bnAddFood.Name = "bnAddFood";
-            this.bnAddFood.Size = new System.Drawing.Size(150, 84);
+            this.bnAddFood.Size = new System.Drawing.Size(150, 76);
             this.bnAddFood.TabIndex = 2;
             this.bnAddFood.Text = "Thêm món";
             this.bnAddFood.UseVisualStyleBackColor = false;
@@ -553,5 +577,7 @@
         private System.Windows.Forms.Button btnPrintBill;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhậpNguyênLiệuToolStripMenuItem;
+        private System.Windows.Forms.Button btnOpenChat;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
     }
 }

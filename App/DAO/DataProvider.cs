@@ -17,7 +17,7 @@ namespace App.DAO
             private set { instance = value; }
         }
 
-        private string connectionString = "Data Source=.\\;Initial Catalog=QuanLyQuanAn;Integrated Security=True;Encrypt=False";
+        public string connectionString = "Data Source=.\\;Initial Catalog=QuanLyQuanAn;Integrated Security=True;Encrypt=False";
 
         public DataTable ExecuteQuery( string query, object[] parameter = null )
         {
