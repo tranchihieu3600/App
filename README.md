@@ -35,11 +35,11 @@ Dự án phần mềm quản lý nhà hàng/quán ăn toàn diện. Hệ thống
 
 | Thành phần | Công nghệ / Framework |
 | :--- | :--- |
-| **Ngôn ngữ chính** | *(Điền tên ngôn ngữ, VD: C#, Python, JavaScript)* |
-| **Cơ sở dữ liệu** | *(Điền tên DB, VD: SQL Server, MySQL)* |
+| **Ngôn ngữ chính** | *(C#, Python)* |
+| **Cơ sở dữ liệu** | *(SQL Server)* |
 | **Trí tuệ nhân tạo (AI)** | Rasa Framework, Voice/Text Recognition |
-| **Real-time** | *(Điền công nghệ, VD: WebSocket, SignalR)* |
-| **Giao diện (Frontend)** | *(Điền công nghệ, VD: WinForms, React, Vue)* |
+| **Real-time** | *(Lắng nghe thay đổi csdl)* |
+| **Giao diện (Frontend)** | *(WinForms)* |
 
 ---
 
